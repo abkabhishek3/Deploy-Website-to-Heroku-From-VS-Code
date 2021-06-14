@@ -1,0 +1,26 @@
+Deploying to Heroku (For Full Stack Websites)
+
+1. Install Git and Heroku CLI
+
+2. Make sure you are in the right workspace/folder
+
+3. Open Terminal from Visual Studio Code (ctrl+t)
+
+4. Log in to heroku-
+    Open Terminal(ctrl+t)
+    type command "heroku login" you will be redirected to heroku website     for logging in.
+         or
+    type "heroku login -i" to log in from terminal.
+
+4. Type the following commands after logging to heroku
+    git init                                                       //initialise git repository
+    heroku apps:create yourprojectname         //create herokuapp
+    heroku git:remote -a yourprojectname      //add a remote to your app
+    git push heroku main                                // Your website will be deployed
+    heroku open                                             // Your website will load in your browser
+
+5. To push again with any changes type the following commands-
+
+    git add .
+    git commit -m "any comment"
+    git push heroku master
